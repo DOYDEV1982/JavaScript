@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.fill{
+    display: block;
+    justify-self: center;
+    margin: 7px;
+    width: 150px;
+    height: 23px;
+    border-radius: 8px;
+}
+
+.identity{
+    display: flex;
+    justify-self: center;
+    width: 95%;
+    
+
+}
+
+.container{
+    background-color: white;
+    width: 320px;
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+
+}
+
+form{
+    margin-right: 140px;
+    column-gap: 10px;
+}
+.signup-form input{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    margin: 20px;
+    justify-self: center;
+
+}
+.error{
+    color: rgb(99, 41, 41);
+}
+
+h1{
+    justify-self: center;
+    margin-bottom: 20px;
+    color: blue;
+
+}
+.button{
+    border-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-left: 12px;
+    width: 200px;
+    color: white;
+    margin-right: 40px;
+    background-color: blue;
+    
+}
+
+button.hover{
+    background-color: black;
+}
+
+#FirstName, #LastName{
+    margin-top:  50px;
+    margin-bottom: 50px;
+}
