@@ -14,10 +14,9 @@ body{
 }
 
 .fill{
-    display: block;
     justify-self: center;
-    margin: 7px;
-    width: 150px;
+    margin: 5px;
+    width: 200px;
     height: 23px;
     border-radius: 8px;
 }
@@ -26,21 +25,21 @@ body{
     display: flex;
     justify-self: center;
     width: 95%;
-    
+    max-width: 205px; 
+    padding: 20px;  
 
 }
 
 .container{
     background-color: white;
-    width: 320px;
+    width: 250px;
     border-radius: 10px;
-    padding: 40px 30px;
+    padding: 30px 30px;
     text-align: center;
 
 }
 
 form{
-    margin-right: 140px;
     column-gap: 10px;
 }
 .signup-form input{
@@ -58,26 +57,23 @@ h1{
     justify-self: center;
     margin-bottom: 20px;
     color: blue;
+    padding: 5%s;
 
 }
 .button{
-    border-top: 20px;
+    border: none;
     padding: 10px;
     border-radius: 5px;
     font-size: 10px;
     margin-left: 12px;
     width: 200px;
     color: white;
-    margin-right: 40px;
+    margin-right: 10px;
     background-color: blue;
+    cursor: pointer;
     
 }
 
 button.hover{
     background-color: black;
-}
-
-#FirstName, #LastName{
-    margin-top:  50px;
-    margin-bottom: 50px;
 }
