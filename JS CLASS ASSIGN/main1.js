@@ -2,10 +2,10 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
 e.preventDefault();
  
 
-const username = document.getElementById("username").value.trim();
+ const username = document.getElementById("username").value.trim();
  const firstname = document.getElementById("firstname").value.trim();
  const lastname = document.getElementById("lastname").value.trim();
- const signupEmail = document.getElementById("email").value.trim();
+ const signupEmail = document.getElementById("signupemail").value.trim();
  const password = document.getElementById("password").value;
  const ConfirmPassword = document.getElementById("confirmpassword").value;
  const errorE1 = document.getElementById("signupError");
@@ -15,7 +15,7 @@ const username = document.getElementById("username").value.trim();
 
 
 
- if(!firstname  ||!lastname  || !username  || !signupEmail || !password || !ConfirmPassword) {
+ if(!username  ||!firstname  || !lastname  || !signupEmail || !password || !ConfirmPassword) {
     errorE1.textContent = "All fields are required";
     return;
  }
