@@ -1,37 +1,59 @@
-document.getElementById("signupForm").addEventListener("submit", function(e){
-e.preventDefault();
+// get the button
+const submit = document.getElementById("submit")
  
 
- const username = document.getElementById("username").value.trim();
- const firstname = document.getElementById("firstname").value.trim();
- const lastname = document.getElementById("lastname").value.trim();
- const signupEmail = document.getElementById("signupemail").value.trim();
- const password = document.getElementById("password").value;
- const ConfirmPassword = document.getElementById("confirmpassword").value;
- const errorE1 = document.getElementById("signupError");
+submit.addEventListener("click", function(){
+   const  addanewTask = document.getElementById("addanewTask")
 
+   const taskText = addanewTask.value.trim()
 
+   if(taskText === ""){
+      alert("please enter a task")
+      return;
+   }
 
+   const bookList = document.getElementById("bookList");
 
+   const li = document.createElement("li");
+   
 
+   // Task : Create a button with javascript , add the content called "Delete" and add the tasklist with the button
+       
+   const deleteBtn = document.createElement("button")
+   deleteBtn.textContent = "Delete";
 
- if(!username  ||!firstname  || !lastname  || !signupEmail || !password || !ConfirmPassword) {
-    errorE1.textContent = "All fields are required";
-    return;
- }
+   li.addEventListener("click", function(){
+      li.style.textDecoration = "line-through";
+   })
 
+   li.addEventListener("click", function(){
+        bookList.removeChild(li)
+   })
 
- if(password.length < 10) {
-    errorE1.textContent = "password do not match";
-    return;
- }
- if(password !== ConfirmPassword){
-    errorE1.textContent = "password is less than 10";
-    return;
+   li.addEventListener("click", function(){
+      li.style.textDecoration = "line-through";
+   })
 
- }
- 
+   li.addEventListener("click", function(){
+      li.style.textDecorationcolor = "green";
+   })
 
- window.location.href="Login.html";
+   li.addEventListener("click", function(){
+
+      li.style.textTransform = "uppercase";
+   })
+
+   li.textContent = taskText;
+
+   li.textContent = taskText;
+
+   bookList.appendChild(li);
+   li.appendChild(deleteBtn)
+
+   // clear the input field
+   addanewTask.value = "";
+   
+
+   
  
 })
